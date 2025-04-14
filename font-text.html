@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            background-image: url(https://s1.picswalls.com/wallpapers/2017/12/10/ultra-4k-wallpapers_110631198_312.jpg);
+            background-size: cover;
+        }
+
+        .navbar {
+            text-align: center;
+            background-color: bisque;
+            padding: 1% ;
+        }
+
+        .navbar a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: green;
+            margin: 0% 2%;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .login_container{
+            background-color: rgba(234, 224, 224, 0.4);
+            margin: auto;
+            backdrop-filter: blur(10px);
+            width: 30%;
+            margin-top: 8%;
+            padding: 0px 20px 20px 20px;
+            text-align: center;
+            color: white;
+        }
+        .login_container *{
+            margin: 1opx;
+        }
+        .form-field input {
+            background-color:  transparent;
+            width: 95%;
+            padding: 10px;
+            border: none;
+            border-bottom-style: solid;
+            border-width: 1px;
+            outline: none;
+        }
+        .form-field input::placeholder{
+            color: white;
+        }
+        .login_container a{
+            text-decoration: none;
+            color: white;
+        }
+        .login-btn button{
+            width: 95%;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Login</a>
+        <a href="">Register</a>
+        <a href="">Gallery</a>
+    </div>
+    <form action="login.html" class="login_container">
+        <h1>Login form</h1>
+        <div class="form-field">
+            <input type="email" name="username" placeholder="Entr your mail" required>
+        </div>
+        <div class="form-field"><input type="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-checkbox"><input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+            <a href="#">Forget password?</a>
+        </div>
+        <div>
+            <button>
+                login
+            </button>
+        </div>
+        <div class="resigter-link">
+            Don't have an account?
+            <a href="">Register</a>
+        </div>
+    </form>
+</body>
+</html>
